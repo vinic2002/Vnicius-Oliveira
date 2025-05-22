@@ -2,57 +2,66 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vinícius Oliveira - Portfólio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Estilos personalizados */
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
-      padding: 0;
     }
+
     header {
-      background-color: #343a40;
-      color: #fff;
-      padding: 20px 0;
+      background: linear-gradient(to right, #007bff, #0056b3);
+      color: white;
       text-align: center;
+      padding: 60px 20px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
     }
-    section {
-      padding: 60px 0;
-    }
-    .bg-dark {
-      background-color: #343a40;
-      color: #fff;
-    }
+
     .btn-custom {
-      background-color: #007bff;
-      color: #fff;
-      border: none;
+      background-color: #ffffff;
+      color: #007bff;
+      font-weight: bold;
+      border-radius: 25px;
     }
+
     .btn-custom:hover {
-      background-color: #0056b3;
+      background-color: #e9e9e9;
+      color: #0056b3;
     }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
     footer {
       background-color: #343a40;
-      color: #fff;
+      color: white;
       text-align: center;
       padding: 20px;
     }
-    /* Estilos para animações */
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 2s forwards;
+
+    a {
+      color: #fff;
     }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -60,84 +69,79 @@
 
   <!-- Cabeçalho -->
   <header>
-    <h1 class="fade-in">Vinícius Oliveira</h1>
-    <p class="fade-in">Estudante de Tecnologia da Informação | Aspirante a Cientista de Dados</p>
-    <a href="#contato" class="btn btn-custom fade-in">Entre em Contato</a>
+    <!-- Substitua "sua-foto.jpg" pela imagem da sua foto -->
+    <h1>Vinícius Oliveira</h1>
+    <p class="lead">Estudante de TI | Aspirante a Cientista de Dados</p>
+    <a href="#contato" class="btn btn-custom mt-3">Entre em Contato</a>
   </header>
 
-  <!-- Seção Sobre -->
-  <section id="sobre" class="container fade-in">
-    <h2>Sobre Mim</h2>
-    <p>Sou Vinicius Oliveira Matias Santos, um profissional dedicado à análise de dados, com uma sólida formação e experiência prática em diversas ferramentas essenciais para a área. Minha trajetória na análise de dados começou com a realização de projetos que envolvem o desenvolvimento de Dashboards em Power BI, além do uso de SQL, Python e Excel para extrair, transformar e analisar dados de maneira eficiente. Minha experiência profissional inclui um período como auxiliar de escritório, onde desempenhei um papel crucial na análise de documentação para o processo seletivo de bolsas da escola adventista. Essa posição me permitiu desenvolver habilidades meticulosas de análise e atenção aos detalhes, garantindo que os processos seletivos fossem conduzidos de maneira justa e eficiente. Além das habilidades técnicas, sou uma pessoa que valoriza a comunicação clara e a apresentação de insights de forma compreensível para diferentes públicos. Estou sempre buscando novas maneiras de aprimorar minhas habilidades e me manter atualizado com as últimas tendências e tecnologias em análise de dados. Para continuar minha trajetória, estou focado em desenvolver um portfólio robusto de projetos, obter certificações relevantes e me envolver com a comunidade de dados através de networking e participação em competições e projetos open source. Meu objetivo é aplicar meu conhecimento e habilidades em análise de dados para ajudar organizações a tomar decisões informadas e estratégicas. Eu estou cursando formação em dados na escola DNC, faço desenvolvimento de Dashboards no Power bi e montagem de planilhas no Excel Eu trabalhei na rede adventista como auxiliar de escritório, eu montava planilha no Excel e fazia a análise de documentação do processo seletivo de bolsas da escola adventista. Faço outros trabalhos comunitário para a igreja sou sonoplasta, responsável por cuidar da área tecnológica do culto por exemplo: projetor, computador, microfone e mesa de som. - sou dedicado - proativo - tenho um alto senso de urgência - sei trabalhar em equipe - eu sou uma pessoa centrada:</p>
-    <ul>
-      <p><b>Qualificações</b></p>
-      <li>Excel</li>
-      <li>Power BI</li>
-      <li>Python</li>
-      <li>SQL</li>
-      <li>Machine Learning</li>
-      <li>Big Data</li>
-      <li>Visualização de Dados</li>
+  <!-- Sobre Mim -->
+  <section id="sobre" class="container">
+    <h2 class="mb-4">Sobre Mim</h2>
+    <p>Sou Vinícius Oliveira, estudante de Tecnologia da Informação com foco em Análise de Dados. Tenho experiência prática com Power BI, SQL, Python e Excel, criando dashboards e soluções de dados.</p>
+    <p>Trabalhei na Rede Adventista analisando documentos para processos de bolsas, e atuo como sonoplasta na igreja, cuidando de microfones, projetores e equipamentos técnicos.</p>
+    <p>Sou dedicado, proativo, com senso de urgência e espírito de equipe. Estudo na Escola DNC e estou sempre buscando aprender mais e evoluir.</p>
+    <h5 class="mt-4">Minhas Habilidades:</h5>
+    <ul class="row list-unstyled">
+      <li class="col-md-4">✅ Excel</li>
+      <li class="col-md-4">✅ Power BI</li>
+      <li class="col-md-4">✅ SQL</li>
+      <li class="col-md-4">✅ Python</li>
+      <li class="col-md-4">✅ Visualização de Dados</li>
+      <li class="col-md-4">✅ Machine Learning (iniciante)</li>
     </ul>
   </section>
 
-  <!-- Seção Projetos -->
-  <section id="projetos" class="container fade-in">
-    <h2>Meus Projetos</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="Dash no Power bi.jpg/300" class="card-img-top" alt="Projeto 1">
-          <div class="card-body">
-            <h5 class="card-title">Projeto 1</h5>
-            <p class="card-text">Descrição breve do projeto.</p>
-            <a href="#" class="btn btn-dark">Ver mais</a>
+  <!-- Projetos -->
+  <section id="projetos" class="bg-light">
+    <div class="container">
+      <h2 class="mb-4">Projetos</h2>
+      <div class="row">
+        <!-- Projeto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="dash_powerbi.jpg" class="card-img-top" alt="Dashboard no Power BI">
+            <div class="card-body">
+              <h5 class="card-title">Dashboard de Vendas</h5>
+              <p class="card-text">Dashboard interativo em Power BI com análises de desempenho de vendas.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Ver Projeto</a>
+            </div>
           </div>
         </div>
+        <!-- Adicione mais projetos aqui -->
       </div>
-      <!-- Adicione mais projetos conforme necessário -->
     </div>
   </section>
 
-  <!-- Seção Contato -->
-  <section id="contato" class="container fade-in">
-    <h2>Contato</h2>
+  <!-- Contato -->
+  <section id="contato" class="container">
+    <h2 class="mb-4">Contato</h2>
     <form>
-      <div class="form-group">
-        <label for="nome">Nome</label>
-        <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+        </div>
       </div>
-      <div class="form-group">
-        <label for="email">E-mail</label>
-        <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
-      </div>
-      <div class="form-group">
+      <div class="mb-3">
         <label for="mensagem">Mensagem</label>
-        <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
+        <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
       </div>
-      <button type="submit" class="btn btn-custom">Enviar</button>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
   </section>
 
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Vinícius Oliveira. Todos os direitos reservados.</p>
-    Perfil no Linkedin: <a href="https://www.linkedin.com/in/viniciusoliveira2002/">Clique aqui</a></h2> 
+    <p>&copy; 2025 Vinícius Oliveira</p>
+    <p><a href="https://www.linkedin.com/in/viniciusoliveira2002/" target="_blank" rel="noopener">LinkedIn: viniciusoliveira2002</a></p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Animação de fade-in para os elementos
-    document.addEventListener('DOMContentLoaded', function () {
-      const elements = document.querySelectorAll('.fade-in');
-      elements.forEach((el, index) => {
-        setTimeout(() => {
-          el.style.opacity = 1;
-        }, index * 500);
-      });
-    });
-  </script>
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
